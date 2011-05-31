@@ -1,4 +1,5 @@
 about=List versions of all Rails frameworks and the environment
+auth\:used_privileges=Lists all privileges used in controllers, views, models
 db\:abort_if_pending_migrations=
 db\:charset=
 db\:collation=
