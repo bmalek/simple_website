@@ -15,7 +15,7 @@ Devise.setup do |config|
   require 'devise/orm/active_record'
   
   # Needed to use Google_Apps OAuth
-  require 'openid/store/filesystem'
+  #require 'openid/store/filesystem'
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
@@ -179,19 +179,7 @@ Devise.setup do |config|
 
   # The default HTTP method used to sign out a resource. Default is :get.
   # config.sign_out_via = :get
-
-  # ==> OmniAuth
-  # Add a new OmniAuth provider. Check the wiki for more information on setting
-  # up on your models and hooks.
-  # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
-  #Facebook
-  config.omniauth :facebook, "132734380134358", "3185cc671f06e03c8160783a85430e39", 
-    { :client_options => { :ssl => { :ca_path => '/etc/ssl/certs' } } }  
-  #Twitter
-  config.omniauth :twitter, "DG4wgsGJ5prMrR1RfmSZg", "PKyUziX9UO6Rvfimuwz29XGHqUMX3K500oHeyNwOfMA"
-  #Google_Apps  
-  config.omniauth :google_apps, OpenID::Store::Filesystem.new('/tmp'), :name => 'google_apps', :domain => 'gmail.com'
-
+  
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
