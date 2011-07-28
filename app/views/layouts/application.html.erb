@@ -14,7 +14,7 @@
           Signed in as <%= current_user.email %>.<br />
           Not you? <%= link_to "Sign out", destroy_user_session_path %>
         <% else %>
-          <%= link_to "Sign In", new_user_session_url %>
+          <%= link_to "Sign in", new_user_session_url %>
         <% end %>
       </div>
       <% flash.each do |name, msg| %>
