@@ -5,7 +5,7 @@ ActionMailer::Base.smtp_settings = {
   :port                 => 587,
   :domain               => "ordib.ir",
   :user_name            => "ordib.iran@gmail.com",
-  :password             => "khodam20",
+  :password             => "secret",
   :authentication       => "plain",
   :enable_starttls_auto => true
 }
